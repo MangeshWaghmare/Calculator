@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <style>
+      #hed {
+        height: 100%;
+        width: 35%;
+        align-items: center;
+        justify-content: center;
+        border: 4px solid silver;
+        background-color: black;
+        box-shadow: 20px 20px 20px ;
+      }
+      #txt
+      {
+        height: 10vh;
+        width: 98%;
+        border: 2px solid black;
+        border-radius: 5px;
+        background-color: silver;
+        color: black;
+        font-size: xx-large;
+        font-family:'Times New Roman', Times, serif;
+        font-weight: bold;
+      }
+      .button
+      {
+        border: 0px solid white;
+        height: 50px;
+        width: 50px;
+        border-radius: 15px;
+        background-color: silver;
+        margin-left: 25%;
+        margin-top: 18%;
+        margin-bottom: 18%;
+        font-size:xx-large;
+        font-family:'Times New Roman', Times, serif;
+      }
+      .button:hover
+      {
+        background-color: rgb(125, 114, 114);
+      }
+      #d2
+      {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <section style="display: flex; align-items: center;justify-content: center; padding-top: 80px;">
+      <div id="hed">
+        <div id="d1">
+          <input id="txt" type="text"/>
+        </div>
+        <div id="d2">
+          <div id="d3">
+            <input id="btn" class="button" type="button" value="C" onclick="clear()"/>
+            <input id="btn" class="button" type="button" value="7" onclick="seven()" />
+            <input id="btn" class="button" type="button" value="4" onclick="four()" />
+            <input id="btn" class="button" type="button" value="1" onclick="one()"/>
+            <input id="btn" class="button" type="button" value="00" onclick="zerozero()"/>
+          </div>
+            <div id="d4">
+            <input id="btn" class="button" type="button" value="( )" onclick="click()"/>
+            <input id="btn" class="button" type="button" value="8" onclick="eight()"/>
+            <input id="btn" class="button" type="button" value="5" onclick="five()"/>
+            <input id="btn" class="button" type="button" value="2" onclick="two()"/>
+            <input id="btn" class="button" type="button" value="0" onclick="zero()"/>
+          </div>
+            <div id="d5">
+            <input id="btn" class="button" type="button" value="%" onclick="modulus()"/>
+            <input id="btn" class="button" type="button" value="9" onclick="nine()"/>
+            <input id="btn" class="button" type="button" value="6" onclick="six()"/>
+            <input id="btn" class="button" type="button" value="3" onclick="three()"/>
+            <input id="btn" class="button" type="button" value="." onclick="dot()"/>
+          </div>
+            <div id="d6">
+            <input id="btn" class="button" type="button" value="/" onclick="div()"/>
+            <input id="btn" class="button" type="button" value="*" onclick="mul()"/>
+            <input id="btn" class="button" type="button" value="-" onclick="sub()"/>
+            <input id="btn" class="button" type="button" value="+" onclick="add()"/>
+            <input id="btn" class="button" type="button" value="=" onclick="equalto()"/>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      var value=document.getElementById("txt").value;
+      function clear()
+      {
+        document.getElementById("txt").value =""
+
+      }
+      function one()
+      {
+        document.getElementById("txt").value ="1"
+
+      }
+      function seven()
+      {
+        document.getElementById("txt").value ="7"
+
+      }
+      function four()
+      {
+        document.getElementById("txt").value ="4"
+
+      }
+      function zerozero()
+      {
+        document.getElementById("txt").value ="00"
+
+      }
+      function eight()
+      {
+        document.getElementById("txt").value ="8"
+
+      }
+      function five()
+      {
+        document.getElementById("txt").value ="5"
+
+      }
+      function two()
+      {
+        document.getElementById("txt").value ="2"
+
+      }
+      function zero()
+      {
+        document.getElementById("txt").value ="0"
+
+      }
+      function modulus()
+      {
+        document.getElementById("txt").value ="( )"
+
+      }
+      function nine()
+      {
+        document.getElementById("txt").value ="9"
+
+      }
+      function six()
+      {
+        document.getElementById("txt").value ="6"
+
+      }
+      function three()
+      {
+        document.getElementById("txt").value ="3"
+
+      }
+      function dot()
+      {
+        document.getElementById("txt").value ="."
+
+      }
+      function div()
+      {
+        document.getElementById("txt").value ="/"
+
+      }
+      function mul()
+      {
+        document.getElementById("txt").value ="*"
+
+      }
+      function sub()
+      {
+        document.getElementById("txt").value ="-"
+
+      }
+      function add()
+      {
+        document.getElementById("txt").value ="+"
+
+      }
+      function equalto()
+      {
+        document.getElementById("txt").value ="="
+
+      }
+    </script>
+  </body>
+</html>
